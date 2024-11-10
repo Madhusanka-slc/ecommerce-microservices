@@ -75,6 +75,16 @@ services:
     image: openzipkin/zipkin
     ports:
       - '9411:9411'
+  keycloak:
+    container_name: keycloak-ms
+    image: keycloak/keycloak
+    ports:
+      - '9090:8080'
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    command:
+      - "start-dev"
 volumes:
   postgres_data: null
   mongo_data: null
