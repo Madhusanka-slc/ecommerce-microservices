@@ -70,6 +70,11 @@ services:
     ports:
       - '1080:1080'
       - '1025:1025'
+  zipkin:
+    container_name: zipkin
+    image: openzipkin/zipkin
+    ports:
+      - '9411:9411'
 volumes:
-  postgres_data:
-  mongo_data:
+  postgres_data: null
+  mongo_data: null
