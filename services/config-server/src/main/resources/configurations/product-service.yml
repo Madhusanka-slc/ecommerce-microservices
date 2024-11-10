@@ -1,24 +1,21 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/product
-    username: postgres
-    password: postgres
+    url: 'jdbc:postgresql://localhost:5432/product'
+    username: admin
+    password: password
     driver-class-name: org.postgresql.Driver
-
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-
   flyway:
     baseline-on-migrate: true
     enabled: true
-    baseline-description: "init"
+    baseline-description: init
     baseline-version: 0
-    user: ${spring.datasource.username}
-    password: ${spring.datasource.password}
-    validateMigrationChecksum=false:
-
+    user: '${spring.datasource.username}'
+    password: '${spring.datasource.password}'
+    validateMigrationChecksum=false: null
 server:
   port: 8050
