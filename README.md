@@ -1,5 +1,4 @@
-# E-Commerce Microservices Project
-
+# E-Commerce Microservices
 ## Overview
 
 This project implements a set of microservices for an e-commerce platform. The services include customer management, product management, order management, payment processing, and notification services. The system is built using **Spring Boot** with **Spring Cloud** for service discovery and **Kafka** for messaging.
