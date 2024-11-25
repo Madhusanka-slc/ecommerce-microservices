@@ -21,7 +21,7 @@ This project implements a set of microservices for an e-commerce platform. The s
 1. First, clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-repo/ecommerce-microservices.git
+git clone https://github.com/Madhusanka-slc/ecommerce-microservices.git
 ```
 
 2. Change to the project directory:
